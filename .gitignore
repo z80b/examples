@@ -1,0 +1,8 @@
+*~
+/*.iml
+/.idea
+/.vscode
+vetur.config.js
+
+# OS specific
+.DS_Store

@@ -1,0 +1,52 @@
+d-header-genders,
+.d-header-genders {
+  display: none;
+}
+
+@media (--desktop-viewport) {
+  d-header-genders {
+    display: block;
+  }
+
+  .d-header-genders {
+    display: flex;
+    justify-content: space-between;
+    width: 254px;
+    font: var(--fontSizeSubLine);
+    position: absolute;
+    left: 20px;
+    top: 36px;
+  }
+
+  .d-header-gendersStretch {
+    left: 36px;
+  }
+
+  .d-header-genders--premium {
+    position: relative;
+    left: 0;
+    top: 4px;
+  }
+
+  .d-header-genders_link {
+    display: inline-block;
+    padding-bottom: 5px;
+    margin-right: 20px;
+    color: var(--primaryColorHover);
+  }
+
+  .d-header-genders_link--secondary {
+    color: var(--overlayLightColor50);
+  }
+
+  .d-header-genders_link_active {
+    border-bottom: var(--middleSecondaryBorder);
+    color: var(--labelColor);
+  }
+
+  .d-header-genders_link__active--secondary {
+    border-bottom: var(--middleSecondaryBorder);
+    border-color: var(--badgeForegroundColor);
+    color: var(--badgeForegroundColor);
+  }
+}

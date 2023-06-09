@@ -1,0 +1,19 @@
+.search-default-wrapper {
+  margin-left: 32px;
+  flex-grow: 1;
+}
+
+.search-default__skeleton {
+  margin: 0 0 0 auto;
+  width: 70px;
+}
+
+.search-default__button {
+  display: block;
+  text-align: center;
+  color: var(--badgeForegroundColor);
+  font-size: 16px;
+  line-height: 40px;
+  border-radius: 4px;
+  background-color: var(--primaryColor);
+}

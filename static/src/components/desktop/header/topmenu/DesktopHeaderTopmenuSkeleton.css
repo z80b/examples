@@ -1,0 +1,69 @@
+.d-header-top-menu-wrapper {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.d-header-top-menu-search {
+  /* поиск должен быт поверх топменю, перебиваем джангу */
+  /* stylelint-disable-next-line declaration-no-important */
+  z-index: 32 !important;
+}
+
+.d-header-topmenu {
+  z-index: 31;
+  color: var(--labelColor);
+  font-size: 16px;
+  line-height: 50px;
+  display: flex;
+  flex-shrink: 0;
+}
+
+.d-header-topmenu-category__link {
+  display: inline-block;
+  margin-right: 12px;
+  cursor: pointer;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 50px;
+  color: var(--labelColor);
+}
+
+.d-header-topmenu-category__link.premium {
+  margin-right: 24px;
+}
+
+.d-header-topmenu-category__link.dense {
+  margin-right: 8px;
+}
+
+.d-header-topmenu-category__link.premium.dense {
+  margin-right: 16px;
+}
+
+.d-header-topmenu-category__link:last-child {
+  margin-right: 0;
+}
+
+@media (--wide-viewport) {
+  .d-header-topmenu-category__link.dense:not(:last-child) {
+    margin-right: 12px;
+  }
+
+  .d-header-topmenu-category__link.premium:not(:last-child) {
+    margin-right: 32px;
+  }
+}
+
+.d-header-topmenu-category__link_red {
+  color: var(--actionColor);
+}
+
+.d-header-topmenu-category__link_active {
+  color: var(--linkTextColor);
+}
+
+.d-header-topmenu-category__link.premium-secondary {
+  color: var(--backgroundColor);
+}
