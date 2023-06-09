@@ -1,2 +1,3 @@
-# examples
-Code examples
+# Code examples
+
+Примеры кода из разных проектов.
